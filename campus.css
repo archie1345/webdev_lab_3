@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+}
+
+body {
+    background-image: url("./assets/images/background4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	font-family: "Lato", Arial, Helvetica, serif;
+	font-size: 1em;
+    flex: 1;
+}
+
+footer {
+    background-color: white;
+    color: rgb(249, 222, 138);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins';
+    width: 100%; /* Make footer full width */
+    position: relative; /* Ensure it positions relative to the parent */
+    left: 50%; /* Center it */
+    transform: translateX(-50%); /* Move it back to the left by half its width */
+}
+
+.logo {
+    background-image: url('/assets/images/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 45px;
+    width: 81px;
+    margin-left: 40px;
+}
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    font-family: cursive;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    height: 60px;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navigation {
+    margin-left: auto; /* Pushes the navigation to the right */
+}
+
+.navigation ul {
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navigation ul li {
+    display: inline; /* Ensure list items are inline */
+    margin-right: 15px; /* Space between items */
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(249,222,138);
+    font-weight: bold;
+    transition: .4s ease-in-out;
+}
+
+.navigation li a:hover{
+    color: rgb(255,162,66);
+}
+
+.content{
+    padding-top: 60px; /* Add padding to push content below the navbar */
+    min-height: calc(100% - 60px); /* Adjust height to fill the remaining space */
+    flex: 1;
+}
+
+:root {
+	--yellow: #f9de8a;
+	--dark: #807967;
+	--deg: -86deg;
+	--trans: all 0.4s ease 0s;
+}
+
+
+.content {
+	width: 90vmin;
+}
+
+h2 {
+	text-align: center;
+}
+
+.event {
+	padding: 2em 0 2em 2.5em;
+	margin: 0;
+}
+
+.names {
+	margin: 1.5em 0 0.5em;
+	padding: 0.73em;
+	background: linear-gradient(
+		83deg,
+		var(--yellow) 0 97%,
+		#fff0 calc(97% + 1px) 100%
+	);
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	transform: scale(0.85);
+	transition: var(--trans);
+}
+
+.names:nth-of-type(even) {
+	text-align: right;
+	background: linear-gradient(
+		-83deg,
+		var(--yellow) 0 97%,
+		#fff0 calc(97% + 1px) 100%
+	);
+}
+
+.picture {
+	width: 40vmin;
+	height: 30vmin;
+	float: left;
+	margin-right: 1.25em;
+	background: linear-gradient(
+		var(--deg),
+		var(--dark) 0 70%,
+		var(--yellow) 0% 100%
+	);
+	transform: rotate(-4deg);
+	transition: var(--trans);
+	border-radius: 0.25em;
+	overflow: hidden;
+	margin-left: -3em;
+	padding: 0.5em;
+}
+
+.names:nth-of-type(even) .picture {
+	--deg: 86deg;
+	float: right;
+	margin-left: 2em;
+	margin-right: -3em;
+	transform: rotate(4deg);
+}
+
+.picture img {
+	width: 320px;
+	height: 240px;
+	border-radius: 0.25em;
+	filter: grayscale(1);
+	background: var(--dark);
+}
+
+.names:hover {
+	transform: scale(1);
+	transition: var(--trans);
+	filter: drop-shadow(0px 20px 10px #0008);
+}
+
+.names:hover .picture {
+	padding: 0.1em;
+	transition: var(--trans);
+	transform: rotate(-1deg);
+	--deg: -89deg;
+}
+
+.names:nth-of-type(even):hover .picture {
+	--deg: 91deg;
+}
+
+.names:hover .picture img {
+	filter: none;
+	transition: var(--trans);
+}
+
+.description {
+    max-height: 200px; /* Set a max height */
+    overflow: auto; /* Hide overflow */
+	padding-top: 1vmin;
+    font-size: 1.5em;
+}
+
+.description p {
+	padding: 0 2em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	display: inline;
+	transform: rotate(-2deg);
+	position: absolute;
+	margin: 0;
+	margin-top: -2.25em;
+	left: 9vmin;
+	padding: 0.5em 0.75em;
+	color: var(--yellow);
+	border-radius: 0.25em;
+	font-size: 1.5em;
+	transform-origin: left bottom;
+}
+
+.names:nth-of-type(even) h3 {
+	left: inherit;
+	right: 9vmin;
+	transform: rotate(2deg);
+	transform-origin: right bottom;
+}
+
+.names:hover h3 {
+	transition: var(--trans);
+	transform: rotate(0deg);
+}
+
+h1{
+    font-family: sans-serif;
+    color: rgb(249,222,138);
+    padding: 0.5rem;
+    font-size: 4em;
+    font-weight: bold;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.bio-card {
+    background-color: rgba(255, 255, 255, 0.271);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    overflow: hidden;
+}

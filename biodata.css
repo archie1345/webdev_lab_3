@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+}
+
+body {
+    background-image: url("./assets/images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: white;
+    color: rgb(249,222,138);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins';
+    
+}
+
+.logo {
+    background-image: url('/assets/images/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 45px;
+    width: 81px;
+    margin-left: 40px;
+}
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    font-family: cursive;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    height: 60px;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navigation {
+    margin-left: auto; /* Pushes the navigation to the right */
+}
+
+.navigation ul {
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navigation ul li {
+    display: inline; /* Ensure list items are inline */
+    margin-right: 15px; /* Space between items */
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(249,222,138);
+    font-weight: bold;
+    transition: .4s ease-in-out;
+}
+
+.navigation li a:hover{
+    color: rgb(255,162,66);
+}
+
+.content{
+    padding-top: 60px; /* Add padding to push content below the navbar */
+    min-height: calc(100% - 60px); /* Adjust height to fill the remaining space */
+    flex: 1;
+}
+
+.intro {
+    padding: 1rem;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#intro1{
+    font-family: sans-serif;
+    color: rgb(249,222,138);
+    padding: 0.5rem;
+    font-size: 5em;
+    font-weight: bold;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.bio-card {
+    background-color: rgba(255, 255, 255, 0.271);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: rgb(83, 83, 83);
+
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ffffff;
+    text-align: left;
+}
+
+tr{
+    background-color: #f8f9fa32;
+}
+
+th {
+    width: 150px;
+    background-color: #f8f9fa5d;
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+}
+
+.photo-cell {
+    width: 200px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #ffffff;
+}
+
+.photo {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #f0f2f5;
+    object-fit: cover;
+}
+
+.bio ul {
+    margin: 0;
+    /* padding-left: 20px; */
+    list-style-type: none;
+}
+
+.bio ul li {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #f8f9fa53;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.bio ul li:hover {
+    background-color: #ffffff5f;
+    transform: translateX(5px);
+}
+
+/* Hover effects */
+tr:hover {
+    background-color: #ffffff5f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+
+    .bio-card {
+        padding: 1rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    th {
+        width: 120px;
+    }
+
+    .photo {
+        width: 120px;
+    }
+
+    td[colspan="2"] {
+        word-break: break-word;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        padding: 0;
+        background: rgba(255, 255, 255, 0.227);
+    }
+
+    .bio-card {
+        box-shadow: none;
+        border: none;
+    }
+
+    th, td {
+        border: 1px solid #000;
+    }
+}
+
+.bio a{
+	display: block;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(54, 54, 54);
+    font-size: 16px;
+}

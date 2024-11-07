@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+}
+
+body {
+    background-image: url("./assets/images/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: white;
+    color: rgb(249,222,138);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins';
+    
+}
+
+.logo {
+    background-image: url('/assets/images/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 45px;
+    width: 81px;
+    margin-left: 40px;
+}
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    font-family: cursive;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    height: 60px;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navigation {
+    margin-left: auto; /* Pushes the navigation to the right */
+}
+
+.navigation ul {
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navigation ul li {
+    display: inline; /* Ensure list items are inline */
+    margin-right: 15px; /* Space between items */
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(249,222,138);
+    font-weight: bold;
+    transition: .4s ease-in-out;
+}
+
+.navigation li a:hover{
+    color: rgb(255,162,66);
+}
+
+.content{
+    padding-top: 60px; /* Add padding to push content below the navbar */
+    min-height: calc(100% - 60px); /* Adjust height to fill the remaining space */
+    flex: 1;
+}
+
+
+.intro{
+    display: flex;
+    height: 200vh;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+}
+
+
+.content h1{
+    font-family: sans-serif;
+    color: rgb(249,222,138);
+    padding: 2rem;
+    font-size: 120px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+@media (max-width: 1100px) {
+    .content h1{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1{
+        font-size: 40px;
+    }
+}
+
+.quote{
+    font-family: cursive;
+    color: rgb(24, 24, 24);
+    padding: 1rem;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(249,222,138);
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: rgb(249,222,138);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: rgb(255, 160, 36);
+}
+

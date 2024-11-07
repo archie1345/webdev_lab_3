@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            my simple biodata page
-        </title>
-        <style>
-            table {width: auto;
-            border-collapse: collapse;}
-            th, td{
-                border: 1px solid rgb(215, 168, 115);
-                padding: 10px;
-                text-align: left;
-            }
-            th{
-                width: 20%;
-            }
-        </style>
-    </head>
-    <body style="font-family: cursive">
-        <h1>
-            Welcome!
-        </h1>
-        <p>
-            Nice to meet you! here are some information about me. 
-        </p>
-        <table>
-            <tr>
-                <th>Name</th>
-                <td>Archie Saskara</td>
-                <td style="text-align: center;">
-                    <img src=".\assets\images\profile.JPG" alt="Archie Saskara" width="200" height="200">
-                </td>
-            </tr>
-            <tr>
-                <th>Date of birth</th>
-                <td colspan="3">13 June 2005</td>
-            </tr>
-            <tr>
-                <th>Religion</th>
-                <td colspan="3">Islam</td>
-            </tr>
-            <tr>
-                <th>Race</th>
-                <td colspan="3">Indonesian</td>
-            </tr>
+<head>
+    <title>My Simple Biodata Page</title>
+    <link rel="stylesheet" href="./biodata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 
-            <tr>
-                <th rowspan="4">Address</th>
-                <td>Street</td>
-                <td colspan="2">Jl. Bukit Hijau Kav. 117</td>
-            </tr>
-            <tr>
-                <td>Town</td>
-                <td colspan="2">Kota Malang</td>
-            </tr>
-            <tr>
-                <td>District</td>
-                <td colspan="2">Lowokwaru</td>
-            </tr>
-            <tr>
-                <td>State</td>
-                <td colspan="2">east java</td>
-            </tr>
-            <tr>
-                <th rowspan="3">Contact</th>
-                <td>Mobile Phone</td>
-                <td>+62 881 3323 088</td>
-                    <tr>
-                        <td>Social Media</td>
-                        <td><a href="https://www.instagram.com/archie_sas/?utm_source=ig_web_button_share_sheet">@archie_sas</a></td>
-                    </tr>
-                    <tr>
-                        <td>Website</td>
-                        <td><a href="https://archie1345.github.io/lab_2/">my simple website</a></td>
-                    </tr>
-            </tr>
-            <tr>
-                <th>Course and Institution</th>
-                <td colspan="3">Information System, Brawijaya University</td>
-            </tr>
-            <tr>
-                <th>Personal Interest</th>
-                <td colspan="3">Taekwondo, Swimming, cycling, video games</td>
-            </tr>
-            <tr>
-                <th>Future plan in 2025</th>
-                <td colspan="3">Got a scholarship to help my finance</td>
-            </tr>
-        </table>
-    </body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <div class="navigation">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./biodata.html">Biodata</a></li>
+                <li><a href="./hobbies.html">Hobbies</a></li>
+                <li><a href="./campus.html">Campus Life</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="content">
+         <div class="bio-card">
+        <h1 id="intro1">Introduction</h1>
+        <p class="intro">
+            Nice to meet you! My name is Archie Saskara. here i will share a short detail about me so you can know me better.
+        </p>
+        <div class="bio">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Archie Saskara</td>
+                    <td style="text-align: center;">
+                        <img src=".\assets\images\profile.JPG" alt="Archie Saskara" width="200" height="200">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date of birth</th>
+                    <td colspan="3">13 June 2005</td>
+                </tr>
+                <tr>
+                    <th>Religion</th>
+                    <td colspan="3">Islam</td>
+                </tr>
+                <tr>
+                    <th>Race</th>
+                    <td colspan="3">Indonesian</td>
+                </tr>
+    
+                <tr>
+                    <th rowspan="4">Address</th>
+                    <td>Street</td>
+                    <td colspan="2">Jl. Bukit Hijau Kav. 117</td>
+                </tr>
+                <tr>
+                    <td>Town</td>
+                    <td colspan="2">Kota Malang</td>
+                </tr>
+                <tr>
+                    <td>District</td>
+                    <td colspan="2">Lowokwaru</td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td colspan="2">east java</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Contact</th>
+                    <td>Mobile Phone</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="https://wa.me/628813323088">+62 881 3323 088</a>
+                            </li>
+                        </ul></td>
+                        <tr>
+                            <td>Social Media</td>
+                            <td>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/archie_sas/?utm_source=ig_web_button_share_sheet"><i class="fa fa-instagram"></i> @archie_sas</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Website</td>
+                            <td>
+                                <ul>
+                                    <li><a href="https://archie1345.github.io/lab_2/">my simple website</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                </tr>
+                <tr>
+                    <th>Course and Institution</th>
+                    <td colspan="3">
+                        <ul>
+                            <li>
+                                <a href="https://filkom.ub.ac.id/s1-si/">Information System, Brawijaya University</a>
+                            </li>
+                        </ul>
+                        </td>
+                </tr>
+                <tr>
+                    <th>Programming skill</th>
+                    <td colspan="3">                   
+                            <ul>
+                                <li>java : intermidiate</li>
+                                <li>python : beginner</li>
+                                <li>flutter : beginner</li>
+                            </ul>                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>Personal Interest</th>
+                    <td colspan="3">
+                        <ul>
+                            <li>Taekwondo</li>
+                            <li>Swimming</li>
+                            <li>cycling</li>
+                            <li>video games</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Future plan in 2025</th>
+                    <td colspan="3">Got a scholarship to help my finance</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        <footer>
+            Archie Saskara &copy; 2024. All right reserved
+        </footer>
+    </div>
+
+
+</body>
 </html>
