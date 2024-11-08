@@ -110,6 +110,7 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
     color: rgb(83, 83, 83);
+    overflow-x: auto;
 
 }
 
