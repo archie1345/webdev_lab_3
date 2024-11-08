@@ -39,7 +39,7 @@ footer{
 }
 
 .navbar {
-    position: fixed; /* Set the navbar to fixed position */
+    position: sticky; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     font-family: cursive;
@@ -76,7 +76,6 @@ footer{
 }
 
 .content{
-    padding-top: 60px; /* Add padding to push content below the navbar */
     min-height: calc(100% - 60px); /* Adjust height to fill the remaining space */
     flex: 1;
 }
