@@ -189,7 +189,7 @@ h2 {
     max-height: 200px; /* Set a max height */
     overflow: auto; /* Hide overflow */
 	padding-top: 1vmin;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .description p {
